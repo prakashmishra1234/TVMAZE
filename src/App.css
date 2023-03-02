@@ -81,6 +81,9 @@
   .detailsMain > img {
     margin: 0;
   }
+  .ratingDiv > p {
+    margin: 0;
+  }
 }
 
 @keyframes App-logo-spin {
