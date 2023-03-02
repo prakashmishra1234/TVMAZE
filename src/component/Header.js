@@ -34,13 +34,22 @@ const Header = () => {
   return (
     <AppBar position="static" color="transparent">
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar
+          disableGutters
+          sx={{
+            display: { sm: "flex", xs: "flex" },
+            flexDirection: { sm: "row", xs: "column" },
+            justifyContent: "space-between",
+            marginBottom: { xs: "1rem", sm: "0rem" },
+          }}
+        >
           <Box
             variant="h6"
             noWrap
             component="a"
             sx={{
-              display: { sm: "flex", xs: "none" },
+              display: { sm: "flex", xs: "flex" },
+              flexDirection: { sm: "column", xs: "row" },
               mr: 2,
               fontFamily: "monospace",
               fontWeight: 700,
@@ -51,7 +60,7 @@ const Header = () => {
           >
             <Typography
               sx={{
-                display: { sm: "flex", xs: "none" },
+                display: { sm: "flex", xs: "flex" },
                 alignItems: "center",
                 justifyContent: "center",
                 mr: 2,
